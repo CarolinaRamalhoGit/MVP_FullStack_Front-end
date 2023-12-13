@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>MVP CGR</title>
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Gestão de Validades dos Produtos - Minimercado Autônomo </h2>
+        </div>
+        <div class="banner">
+            <img src="img/imagem.JPG" alt="Desenho de gôndolas de produtos de mercado com calendário sobreposto">
+        </div>
+    </header>
+
+    <!-- Seções de Adição de um novo item -->
+    <section class="newItemTitle">
+        <h2>Preencha os campos para adicionar um novo item</h2>
+    </section>
+    <section class="newItem">
+        <select id="dropdownNome">
+            <option value="" disabled selected>Selecione o nome do produto</option>
+        </select>
+        <input type="text" id="newQuantity" placeholder="Quantidade:">
+        <input type="text" id="newExpiration" placeholder="Validade:">
+        <span onclick="addProduto()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="itens_existentes">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Validade</th>
+                <th>Excluir</th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+body,
+ul,
+li {
+    font-family: tahoma, verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 222, 199);
+}
+
+header {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    padding-bottom: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.title {
+    color: white;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    font-size: 130%;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(39, 64, 97);
+    padding: 1px 0px;
+    position: sticky;
+    top: 0px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.banner {
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+    border: 5px solid rgb(39, 64, 97);
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: auto;
+    height: 300px;
+    padding-bottom: 0px;
+}
+
+.newItem {
+    background-color: rgb(225, 222, 199);
+    padding: 0px 0px 0px 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newItemTitle h2 {
+    color: rgb(39, 64, 97);
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#dropdownNome {
+    margin: 0;
+    border: 1px solid rgb(39, 64, 97);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(39, 64, 97);
+    margin-right: 5px;
+}
+
+#newQuantity {
+    margin: 0;
+    border: 1px solid rgb(39, 64, 97);
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(39, 64, 97);
+    margin-right: 5px;
+}
+
+#newExpiration {
+    margin: 0;
+    border: 1px solid rgb(39, 64, 97);
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(39, 64, 97);
+    margin-right: 5px;
+}
+
+
+.addBtn {
+    padding: 10px 10px;
+    background-color: rgb(39, 64, 97);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    width: 10%;
+
+}
+
+.addBtn:hover {
+    background-color: rgb(93, 87, 117);
+    color: white;
+
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(39, 64, 97);
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 10px 8px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+    color: rgb(39, 64, 97);
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:last-child {
+    text-align: center;
+    color: rgb(39, 64, 97);
+}
+
+table {
+    background-color: white;
+    width: 50%;
+    margin: 20px auto;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th:nth-child(1) {
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
